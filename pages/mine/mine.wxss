@@ -1,0 +1,110 @@
+.container {
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+/*   头部  */
+.mine-userinfo-wrapper-style{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #0398ff;
+    width: 100%;
+    height:70px;
+}
+.mine-userinfo-img-style{
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: #fff;
+    border-style: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mine-userinfo-not-login-text-style{
+    font-size: 16px;
+    color: #fff;
+}
+.mine-userinfo-login-wrapper-style{
+    display: flex;
+    flex-direction: column;
+}
+.mine-userinfo-name-style{
+    font-size: 18px;
+    color: #fff;
+}
+.mine-userinfo-level-style{
+    font-size: 14px;
+    color: rgba(250, 250, 55, 0.5);
+}
+.mine-userinfo-right-img-style{
+    position: absolute;
+    right: 10px;
+}
+
+/*   中间内容  */
+.mine-horizontal-wrapper-style{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex:1;
+}
+.mine-horizontal-hover-wrapper-style{
+    background-color: rgba(229, 229, 229, 0.7);
+}
+
+.mine-horazontal-left-wrapper-style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+.mine-horazontal-right-wrapper-style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.border-bottom-gray-style{
+    border-bottom-width: 10px;
+    border-bottom-color: #e5e5e5;
+    border-bottom-style: solid;
+}
+.border-bottom-line-style{
+    border-bottom-width: 1px;
+    border-bottom-color: #e5e5e5;
+    border-bottom-style: solid;
+}
+
+.padding-left-10{
+    padding-left: 10px;
+}
+
+.left-icon-style{
+    width:20px;
+    height:20px;
+}
+.left-title-style{
+    font-size: 14px;
+    color: #333333;
+    margin-left: 10px;
+}
+
+.right-title-style{
+    font-size: 18px;
+    color: #333333;
+}
+.right-arrow-style{
+    width:12px;
+    height:12px;
+    margin-left: 10px;
+}

@@ -1,0 +1,35 @@
+
+<import src="../../componet/template/toast/wetoast.wxml"/>
+<view class="container">
+    <!-- logo-->
+    <view class="login-logo-wrapper-style">
+        <image class="login-logo-style" src="/images/login_logo.png" />
+        <text class="login-logo-title-style">三享通</text>
+        <text class="login-logo-desc-style">享服务 享创业 享生活</text>
+    </view>
+    <!-- 手机号码-->
+    <view class="input-wrapper-style margin-top-10 {{mobileStyle.wrapperBorderBottomStyle}}">
+        <image class="input-icon-style" src="{{mobileStyle.leftIcon}}" />
+        <input class="{{mobileStyle.style}}" value="{{reqData.mobile}}" type="text" bindinput="handleMobileChange" placeholder="请输入三享通会员手机号" placeholder-class="input-place-style" maxlength="13" focus="{{mobileFocus}}" bindfocus="handleMobileFocus" bindblur="handleMobileBlur"/>
+        <image wx:if="{{mobileStyle.showDelIcon}}" bindtap="handleDelMobile" class="input-icon-style" src="/images/icon_new_delete.png" />
+    </view>
+    <!-- 密码-->
+    <view class="input-wrapper-style  {{pwdStyle.wrapperBorderBottomStyle}}">
+        <image class="input-icon-style" src="{{pwdStyle.leftIcon}}" />
+        <input class="{{pwdStyle.style}}" value="{{reqData.password}}" type="password" bindinput="handlePwdChange" placeholder="请输入登录密码" placeholder-class="input-place-style" focus="{{pwdFocus}}" bindfocus="handlePwdFocus" bindblur="handlePwdBlur"/>
+        <image wx:if="{{pwdStyle.showDelIcon}}" bindtap="handleDelPwd" class="input-icon-style" src="/images/icon_new_delete.png" />
+    </view>
+    <!-- 忘记密码-->
+    <view class="forget-pwd-wrapper-style margin-top-10">
+        <text class="forget-left-style text-underline-style">忘记密码</text>
+        <text class="forget-right-style text-underline-style">快捷方式登录</text>
+    </view>
+    <!-- 登录/注册按钮-->
+    <view class="btn-wrapper-style">
+        <view class="btn-wrapper-style-box">
+            <button class="btn-style margin-top-30 btn-primary-style" hover-class="login-btn-hover-style" bindtap="handleLogin">登录</button>
+            <button class="btn-style margin-top-10 regist-btn-style" hover-class="regist-btn-hover-style" bindtap="handleRegist">注册</button>
+        </view>
+    </view>
+    <loading hidden="{{loading.hiddenLoading}}">{{loading.loadText}}</loading>
+</view>

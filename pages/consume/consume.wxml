@@ -1,0 +1,75 @@
+<view class="container">
+    <!--搜索模块 -->
+    <view class="top-search-wrapper-style">
+        <!--左边城市显示区域 -->
+        <view class="top-search-left-wrapper-style">
+            <text>深圳市</text>
+            <image class="top-search-left-img-style" src="../../images/icon_arrow_down.png"/>
+        </view>
+        <!--中间文本框区域 -->
+        <view class="top-search-middle-wrapper-style">
+            <image class="top-search-middle-img-style" src="../../images/icon_search.png"/>
+            <text class="top-search-middle-text-style">找商家</text>
+        </view>
+        <!--右边消息图标区域 -->
+        <view class="top-search-right-wrapper-style">
+            <image class="top-search-right-img-style" src="../../images/msg_icon.png" />
+        </view>
+    </view>
+    <scroll-view scroll-y="true" style="height:{{scrollViewHeight}}px">
+        <!--banner区域 -->
+        <view class="banner-wrapper-style">
+            <swiper autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+                <block wx:for="{{bannerImgs}}" wx:for-item="item">
+                    <swiper-item>
+                        <image class="banner-img-style" src="{{item.url}}" mode="scaleToFill" />
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <!--分类区域 -->
+        <view class="category-wrapper-style" >
+            <block wx:for="{{categoryList}}" wx:for-index="index" wx:for-item="item">
+                <view class="category-item-style" hover-class="weui-grid_active">
+                    <image class="category-img-style" src="{{item.url}}"/>
+                    <text class="category-text-style">{{item.name}}</text>
+                </view>
+            </block>
+        </view>
+        <!--红包活动区域 -->
+        <view></view>
+        <!--优质商家列表区域 -->
+        <view class="list-wrapper-style">
+            <view class="empty-line-style"></view>
+            <!-- 标题部分 -->
+            <view class="list-title-wrapper-style"   hover-class="weui-grid_active">
+                <view class="list-title-left-wrapper-style">
+                    <image class="list-title-left-img-style" src="../../images/icon_youzhi.png"/>
+                    <text class="list-title-left-text-style">优质商家</text>
+                </view>
+                <view class="list-title-right-wrapper-style">
+                    <text class="list-title-right-text-style">全部</text>
+                    <image class="list-title-right-img-style" src="../../images/right_arrow_icon.png"/>
+                </view>
+            </view>
+            <!-- 列表内容部分 -->
+            <view class="list-item-wrapper-style">
+                <block wx:for="{{shopList}}" wx:for-index="index" wx:for-item="shop">
+                    <view class="list-item-style"  hover-class="weui-grid_active">
+                        <image class="list-item-img-style" src="{{shop.url}}"/>
+                        <view class="list-item-middle-style">
+                            <text class="list-item-shop-name-style">{{shop.shopName}}</text>
+                            <text class="list-item-shop-type-style">{{shop.columnName}}</text>
+                            <text class="list-item-shop-num-style">{{shop.soldNumber}}人消费过</text>
+                        </view>
+                        <view class="list-item-right-style">
+                            <image class="list-item-right-img-style" src="../../images/icon_arrow_left.png"/>
+                            <text>{{shop.distance}}</text>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </scroll-view>
+    
+</view>

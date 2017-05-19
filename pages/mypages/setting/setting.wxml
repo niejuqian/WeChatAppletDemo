@@ -1,0 +1,49 @@
+<view class="container">
+    <!--修改登录密码 -->
+    <view class="mine-horizontal-wrapper-style  border-bottom-line-style"  hover-class="mine-horizontal-hover-wrapper-style">
+        <view class="mine-horazontal-left-wrapper-style">
+            <text class="left-title-style">修改登录密码</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--支付设置 -->
+    <view class="mine-horizontal-wrapper-style  border-bottom-line-style"  hover-class="mine-horizontal-hover-wrapper-style">
+        <view class="mine-horazontal-left-wrapper-style">
+            <text class="left-title-style">支付设置</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--用户协议 -->
+    <view class="mine-horizontal-wrapper-style  border-bottom-gray-style"  hover-class="mine-horizontal-hover-wrapper-style">
+        <view class="mine-horazontal-left-wrapper-style">
+            <text class="left-title-style">用户协议</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--关于我们 -->
+    <view class="mine-horizontal-wrapper-style  border-bottom-line-style"  hover-class="mine-horizontal-hover-wrapper-style" bindtap="handleAbout">
+        <view class="mine-horazontal-left-wrapper-style">
+            <text class="left-title-style">关于我们</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--退出登录按钮 -->
+    <view wx:if="{{isLogin}}" class="btn-wrapper-style">
+        <view class="btn-wrapper-style-box">
+            <button class="btn-style margin-top-60 btn-primary-style" hover-class="login-btn-hover-style" bindtap="handleExit">
+                退出登录
+            </button>
+        </view>
+    </view>
+    <view name="about-html">
+        
+    </view>
+</view>

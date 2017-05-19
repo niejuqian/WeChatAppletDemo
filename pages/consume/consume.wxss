@@ -1,0 +1,210 @@
+.container {
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+.top-search-wrapper-style{
+    width:100%;
+    height:35px;
+    background-color: #0398ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-search-left-wrapper-style{
+    color:white;
+    font-size: 12px;
+    width:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.top-search-left-img-style{
+    width:12px;
+    height:10px;
+    margin-left: 3px;
+}
+.top-search-middle-wrapper-style{
+    flex: 1;
+    height:25px;
+    background-color:white;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.top-search-middle-img-style{
+    width:20px;
+    height:20px;
+    left: 10px;
+    position:absolute;
+
+}
+.top-search-middle-text-style{
+    flex:1;
+    color: #999999;
+}
+.top-search-right-wrapper-style{
+    width:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.top-search-right-img-style{
+    height: 20px;
+    width:20px;
+}
+
+
+/* banner区域  */
+.banner-wrapper-style{
+    width:100%;
+    height:100px;
+}
+.banner-img-style{
+    width:100%;
+    height:100px;
+}
+
+/* 分类区域 */
+.category-wrapper-style{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.category-item-style{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    width:20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.category-img-style{
+    width:25px;
+    height:25px;
+    border-radius: 25px;
+}
+.category-text-style{
+    color: #666666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*列表区域*/
+.list-wrapper-style{
+    width:100%;
+    height:200px;
+}
+/* 优质商家标题部分*/
+.list-title-wrapper-style{
+    display: flex;
+    height:30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.list-title-left-wrapper-style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list-title-left-img-style{
+    width:20px;
+    height: 20px;
+}
+.list-title-left-text-style{
+    font-size: 15px;
+    color:#666666;
+    margin-left: 5px;
+}
+.list-title-right-wrapper-style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-title-right-img-style{
+    width:12px;
+    height: 12px;
+}
+.list-title-right-text-style{
+    font-size: 14px;
+    color:#999999;
+    margin-right: 5px;
+}
+
+/*商家列表部分*/
+.list-item-wrapper-style{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.list-item-style{
+    width:100%;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    border-bottom: 0.5px solid #e5e5e5;
+}
+.list-item-img-style{
+    width:120px;
+    height:90px;
+}
+.list-item-middle-style{
+    display: flex;
+    height:90px;
+    flex-direction: column;
+    flex:1;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+.list-item-shop-name-style{
+    color:#333;
+    font-size: 16px;
+}
+.list-item-shop-type-style{
+    color:#999;
+    font-size: 14px;
+}
+.list-item-shop-num-style{
+    color:#333;
+    font-size: 14px;
+}
+.list-item-right-style{
+    position: absolute;
+    right:10px;
+    font-size: 16px;
+    color:#999;
+}
+.list-item-right-img-style{
+    width:12px;
+    height:12px;
+    margin-right: 5px;
+}
+
+/*other*/
+.empty-line-style{
+    width:100%;
+    height:10px;
+    background-color: #e5e5e5;
+}
+.space-line-style{
+    width:100%;
+    height:1px;
+    background-color: #e5e5e5;
+}
+

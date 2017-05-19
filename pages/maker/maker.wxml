@@ -1,0 +1,30 @@
+<view class="container">
+    <view>
+        <text id="title" data-title-name="我是home页面" bindtap="titleOnClick">我是home页面</text>
+    </view>
+    <!-- view class="line-style"/ -->
+    <view>
+        <view wx:if="{{a == 1}}">对了</view>
+        <block wx:elif="{{a == 2}}">
+            <view class="img-wrapper-style">
+                <image class="img-style" src="/images/home_normal.png"/>
+                <text class="text-style">我是{{a}}</text>
+            </view>
+        </block>
+        <view wx:else>都不对</view>
+    </view>
+    <view class="line-style"/>
+    <view class="for-wrapper-style">
+        <text>集合遍历</text>
+        <block wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+            <view>
+                <text>姓名：{{item.name}} 年龄：{{item.age}}</text>
+            </view>
+        </block>
+    </view>
+    <view>
+        <button class="weui-btn" type='default'>我是默认按钮</button>
+        <button class="weui-btn" type='warn'>我是警告按钮</button>
+        <button class="weui-btn" style="background-color:#0389ff;" type='primary'>我是主要操作按钮</button>
+    </view>
+</view>

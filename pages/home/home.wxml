@@ -1,0 +1,32 @@
+<view class="container">
+    <view class="top-wrapper-style">
+        <block wx:for="{{topList}}" wx:for-index="index" wx:for-item="item">
+            <view class="top-item-wrapper-style">
+                <image class="top-img-style" src="{{item.img}}"/>
+                <text class="top-text-style">{{item.name}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="amount-wrapper-style" hover-class="weui-grid_active" bindtap="handleAccount">
+        <text class="amount-desc-style">账户总额</text>
+        <view class="amount-view-wrapper-style">
+            <text class="amount-style">{{isLogin ? '￥' + amount : '未登录'}}</text>
+            <image class="amount-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <view class="space-view-style"></view>
+    <view class="content-wrapper-style">
+        <view  class="weui-grids">
+            <block wx:for="{{contentList}}" wx:for-index="index" wx:for-item="item">
+                <!-- <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="{{item.img}}" />
+                    <view class="weui-grid__label">{{item.name}}</view>
+                </navigator> -->
+                <view class="weui-grid" data-type="{{item.opeType}}" bindtap="onItemClick" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon content-img-style" src="{{item.img}}"/>
+                    <text class="weui-grid__label content-text-style">{{item.name}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,18 @@
+/* index.wxss */
+.container {
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+.map-wrapper-style{
+  position: absolute;
+}
+.location-icon-style{
+    position: absolute;
+    height:36px;
+    width: 36px;
+    right: 20px;
+    bottom: 80px;
+    z-index: 100;
+}

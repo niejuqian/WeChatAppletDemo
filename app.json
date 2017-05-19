@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/maker/maker",
+    "pages/consume/consume",
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/mypages/setting/setting",
+    "pages/webview/webview",
+    "pages/mymap/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0398ff",
+    "navigationBarTitleText": "三享通",
+    "navigationBarTextStyle": "#fff",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#4f89ff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home_normal.png",
+        "selectedIconPath": "images/home_pressed.png"
+      },
+      {
+        "pagePath": "pages/maker/maker",
+        "text": "创客",
+        "iconPath": "images/chuangke_normal.png",
+        "selectedIconPath": "images/chuangke_pressed.png"
+      },
+      {
+        "pagePath": "pages/consume/consume",
+        "text": "消费",
+        "iconPath": "images/sanquan_normal.png",
+        "selectedIconPath": "images/sanquan_pressed.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/wode_normal.png",
+        "selectedIconPath": "images/wode_pressed.png"
+      }
+    ]
+  }
+}

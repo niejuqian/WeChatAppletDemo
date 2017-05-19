@@ -1,0 +1,44 @@
+@import '../../mine/mine.wxss';
+
+
+.btn-wrapper-style{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-wrapper-style-box{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.btn-style{
+    display: inline-block;
+    width: 100%;
+}
+.btn-primary-style{
+    background-color: #0389ff;
+    color: #fff;
+}
+.regist-btn-style{
+    color: #0389ff;
+    border: 1px solid #0389ff;
+    background: none;
+}
+.regist-btn-hover-style{
+    background: #0389ff;
+    color: #fff;
+}
+.login-btn-hover-style{
+    background-color: rgba(3, 137, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+}
+.login-btn-display-style{
+    background-color: rgba(3, 137, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.margin-top-60{
+    margin-top: 60px;
+}

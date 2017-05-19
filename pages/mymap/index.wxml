@@ -1,0 +1,25 @@
+<!--index.wxml-->
+
+  <!-- <map id="mymap" 
+    class="map-wrapper-style"
+    style="width:100%;height:{{height}}px" 
+    latitude="{{latitude}}" 
+    longitude="{{longitude}}" 
+    markers="{{markers}}"
+    controls="{{controls}}"
+    show-location="true"
+  bindcontroltap="controltap" 
+  bindmarkertap="markertap" 
+  bindregionchange="regionchange" 
+    scale="14"/> -->
+<map id="mymap" 
+    latitude="{{latitude}}" 
+    longitude="{{longitude}}" 
+    scale="{{scale}}" 
+    controls="{{controls}}" 
+    markers="{{markers}}" 
+    circles="{{circles}}"
+    show-location="true"
+    bindcontroltap="controltap" 
+    bindmarkertap = "markertap"
+    style="width: 100%; height: {{height}}px;"/>

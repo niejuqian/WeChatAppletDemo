@@ -1,0 +1,77 @@
+<view class="container">
+    <!--会员信息 -->
+    <view class="mine-userinfo-wrapper-style" bindtap="onUserInfo">
+        <image class="mine-userinfo-img-style" src="{{isLogin ? userLogoUrl : '/images/head_normal.png'}}"/>
+        <block wx:if="{{isLogin}}">   
+            <view class="mine-userinfo-login-wrapper-style">
+                <text class="mine-userinfo-name-style">{{userinfo.nikeName}}</text>
+                <text class="mine-userinfo-level-style">{{levelName}}</text>
+            </view>
+        </block>
+        <block wx:else>
+            <text class="mine-userinfo-not-login-text-style">未登录</text>
+        </block>
+        <image class="mine-userinfo-right-img-style right-arrow-style" src="/images/white_right_arrow.png"/>
+    </view>
+    <!--账户总额 -->
+    <view class="mine-horizontal-wrapper-style border-bottom-gray-style"  hover-class="mine-horizontal-hover-wrapper-style" bindtap="handleAccount">
+        <view class="mine-horazontal-left-wrapper-style">
+            <image class="left-icon-style"  src="/images/icon_balance.png"/>
+            <text class="left-title-style">账户总额</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <text wx:if="{{isLogin}}" class="right-title-style">￥{{amount}}</text>
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--我的订单 -->
+    <view class="mine-horizontal-wrapper-style border-bottom-line-style"  hover-class="mine-horizontal-hover-wrapper-style">
+        <view class="mine-horazontal-left-wrapper-style">
+            <image class="left-icon-style"  src="/images/icon_my_order.png"/>
+            <text class="left-title-style">我的订单</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--付款码 -->
+    <view class="mine-horizontal-wrapper-style  border-bottom-gray-style"  hover-class="mine-horizontal-hover-wrapper-style">
+        <view class="mine-horazontal-left-wrapper-style">
+            <image class="left-icon-style"  src="/images/pay_code_icon.png"/>
+            <text class="left-title-style">付款码支付</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--推荐 -->
+    <view class="mine-horizontal-wrapper-style  border-bottom-line-style"  hover-class="mine-horizontal-hover-wrapper-style">
+        <view class="mine-horazontal-left-wrapper-style">
+            <image class="left-icon-style"  src="/images/recomm_member_icon.png"/>
+            <text class="left-title-style">推荐</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--帮助与反馈 -->
+    <view class="mine-horizontal-wrapper-style  border-bottom-gray-style"  hover-class="mine-horizontal-hover-wrapper-style">
+        <view class="mine-horazontal-left-wrapper-style">
+            <image class="left-icon-style"  src="/images/feedback_icon.png"/>
+            <text class="left-title-style">帮助与反馈</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+    <!--设置 -->
+    <view class="mine-horizontal-wrapper-style  border-bottom-line-style"  hover-class="mine-horizontal-hover-wrapper-style" bindtap="handleSetting">
+        <view class="mine-horazontal-left-wrapper-style">
+            <image class="left-icon-style"  src="/images/icoc_me_setting.png"/>
+            <text class="left-title-style">设置</text>
+        </view>
+        <view class="mine-horazontal-right-wrapper-style">
+            <image class="right-arrow-style" src="/images/right_arrow_icon.png"/>
+        </view>
+    </view>
+</view>
