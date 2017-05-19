@@ -11,3 +11,5 @@
 ## 本地数据缓存
 ## 地图：标注、范围、控件
 ![地图效果](https://raw.githubusercontent.com/niejuqian/WeChatAppletDemo/master/effect/map.png)
+
+** 敬请期待... **
